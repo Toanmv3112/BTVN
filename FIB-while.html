@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIBONACCI-WHILE</title>
+</head>
+<body>
+    <script>
+        let i=1;
+        let num = 6;
+        let fib1=0;
+        let fib2=1;
+        let fib;
+        if(num>0){
+            do{
+                console.log(fib1);
+                fib=fib1+fib2;
+                fib1=fib2;
+                fib2=fib;
+                i++;
+            }
+            while(i<=num);
+        } else console.log("xem lại só đã nhập");
+    </script>
+    
+</body>
+</html>
