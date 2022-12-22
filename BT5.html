@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAITAP-5</title>
+</head>
+
+<body>
+    <!-- lấy child trong thẻ <p> của div thứ 1
+        đưa vào thẻ <h5> của  div thứ 3 sau khi ấn nút copy -->
+    <div class="wrapper">
+        <p>This a paragragh 1</p>
+        <p>This a paragragh 2</p>
+        <p>This a paragragh 3</p>
+        <p>This a paragragh 4</p>
+        <p>This a paragragh 5</p>
+    </div>
+    <div class="wrapper">Phân cách giữa 2 vùng</div>
+    <div class="wrapper"></div>
+    <button onclick=" copyP()">COPY</button>
+<script>
+    function copyP() {
+        const pNodes = document.querySelectorAll('.wrapper p');
+        // gọi các thẻ p cần copy ra
+        const copyNode = document.querySelector('.wrapper:nth-child(3)');
+        // gọi vị trí sau copy cần cho vào
+        for (let i = 0; i < pNodes.length; i++) {
+            const hCopy = document.createElement('h5'); //tạo con pCopy trung gian 
+            hCopy.innerText = pNodes[i].innerText;
+            copyNode.appendChild(hCopy);
+        }
+    }
+</script>
+</body>
+
+</html>

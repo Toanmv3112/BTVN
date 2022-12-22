@@ -4,38 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slide ảnh</title>
+    <title>Document</title>
 </head>
 <body>
-    <!-- cho mảng chứa file ảnh, click vào trước sau sẽ nhảy sang ảnh khác -->
-    <style>
-        .container{
-            width: 400px;
-            display: flex;
-        }
-        #slider{
-            width: 300px;
-            height: 300px;
-        }
-        .button{
-            height: 25px;
-            align-self: center
-        }
-    
-    </style>
-    <div class="container">
-
-        <button class="button" onclick="prev()"> PREV </button>
-        <img id="slider" src="https://allimages.sgp1.digitaloceanspaces.com/photographereduvn/2022/07/1656721556_454_Top-99-hinh-anh-hot-girl-xinh-me-hon-quen.jpg">
-        <button class="button" onclick="next()"> NEXT </button>
+    <div>
+            <img id="slider" src= "https://luv.vn/wp-content/uploads/2021/08/hinh-anh-gai-xinh-71.jpg">
+        <button onclick="prev()"> Ảnh trước </button>
+        <button onclick="next()"> Ảnh sau </button>
     </div>
     
     <script>
-        var images = [
+        let images = [
             "https://allimages.sgp1.digitaloceanspaces.com/photographereduvn/2022/07/1656721556_454_Top-99-hinh-anh-hot-girl-xinh-me-hon-quen.jpg",
             "https://luv.vn/wp-content/uploads/2021/08/hinh-anh-gai-xinh-71.jpg",
-            "https://luv.vn/wp-content/uploads/2021/08/hinh-anh-gai-xinh-7-edited.jpg",
-            "https://www.dungplus.com/wp-content/uploads/2019/12/girl-xinh-600x600.jpg"
+            "https://cdn.diemnhangroup.com/seoulcenter/2022/11/gai-xinh-1.jpg"
         ];
         var num = 0;
     

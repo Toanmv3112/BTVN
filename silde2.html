@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide2</title>
+</head>
+<style>
+    .container{
+        width: 800px;
+        display: flex;
+        margin: 0px auto;
+        align-items: center;
+        flex-direction: column; 
+    }
+    #showimage {
+        width: 100%;
+        margin-bottom: 10px;
+        height: 800px;
+
+    }
+    .imagelist{
+        display: flex; 
+        /* justify-content: space-between; */
+
+       }
+    .imageitem{
+        width: 100px;
+        margin-left: 10px;
+        height: 100px;
+
+    }
+</style>
+<body>
+    <div class="container">
+        <img id="showimage"
+            src="https://allimages.sgp1.digitaloceanspaces.com/photographereduvn/2022/07/1656721556_454_Top-99-hinh-anh-hot-girl-xinh-me-hon-quen.jpg">
+        <div class="imagelist">
+            <img class="imageitem"src="https://khoinguonsangtao.vn/wp-content/uploads/2022/08/hinh-nen-gai-xinh-448x560.jpg">
+            <img class="imageitem"src="https://scontent.fhan3-4.fna.fbcdn.net/v/t1.6435-9/49285358_2057528290975486_5218007432072003584_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=QrgKrGtZlzMAX_0aN9v&_nc_ht=scontent.fhan3-4.fna&oh=00_AfAOz5c-0jqFh0Lzpn_9wcl3NWb0tMuox0D520zgtr7zTQ&oe=63CB675F">
+            <img class="imageitem" src="https://scontent.fhan3-3.fna.fbcdn.net/v/t1.6435-9/36739825_1799816043413380_2880474912902873088_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=8GUA7pKqJPUAX_DKYWu&_nc_ht=scontent.fhan3-3.fna&oh=00_AfDyJmk6i7HRzjHHB55RNPYqgX6B58qgTk5ydb7v043wiQ&oe=63CB8CE2">
+            <img class="imageitem" src="https://scontent.fhan3-2.fna.fbcdn.net/v/t31.18172-8/29749920_1690254717702847_639825461500790919_o.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=qBrzGAsEwwAAX9DB-Dq&_nc_ht=scontent.fhan3-2.fna&oh=00_AfBi_uItu_3aMPEVrcb6TOS8ohI0jFq5DpJxjk5UlmOhmQ&oe=63CB75F4">
+            <img class="imageitem" src="https://scontent.fhan4-1.fna.fbcdn.net/v/t1.18169-9/16387279_1270272813034375_6752908035016713263_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=9267fe&_nc_ohc=9lnl8qEaVHAAX86cMWP&_nc_ht=scontent.fhan4-1.fna&oh=00_AfAT8Dx9OCDD-4QHECWch8mJiNlbff0hFe_NM2iDE44ZFg&oe=63CB8315">
+            <img class="imageitem" src="https://allimages.sgp1.digitaloceanspaces.com/photographereduvn/2022/07/1656721556_454_Top-99-hinh-anh-hot-girl-xinh-me-hon-quen.jpg">
+            <img class="imageitem" src="https://1.bp.blogspot.com/-sG2vlqt5LNM/XVIR7Hk3A7I/AAAAAAAATco/Xo8IaS4Oy9kv4NKPn_tDVPrUO1c5eC4PgCLcBGAs/s320/BaoBua-CoM-BaoBua-CoM-Anh-Gai-Xinh-Vong-1-Khung%2B1.jpg">
+            
+        </div>
+    </div>
+<script>
+    let listElement= document.querySelectorAll('.imageitem')
+    for(let i=0; i< listElement.length;i++){
+        listElement[i].onclick =function(){
+            let link=this.getAttribute('src')
+            document.querySelector('#showimage').setAttribute('src', link)
+        }
+    }
+</script>
+</body>
+
+</html>

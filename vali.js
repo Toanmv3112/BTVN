@@ -15,6 +15,7 @@ function validate(input) {
     } else {
         error.innerText = '';
         return true;
+        
     }
 }
 function validateEmail(input) {
