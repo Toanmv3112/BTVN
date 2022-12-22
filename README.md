@@ -1,1 +1,1 @@
-Validation cơ bản
+DCOM, Validation cơ bản
